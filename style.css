@@ -1,0 +1,139 @@
+/* ~/lingcode/style.css */
+
+/* Global Reset & Typography */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body { 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background: #f4f6f9; 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header / Navigation Bar */
+header { 
+    background: #2c3e50; /* Deep Slate Blue from your original design */
+    color: white; 
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-bottom: 4px solid #c59b27; /* Added Gold accent border under header */
+}
+
+header h1 { 
+    margin: 0; 
+}
+
+nav a { 
+    color: white; 
+    text-decoration: none; 
+    margin-left: 15px; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect using your new Logo Gold */
+nav a:hover {
+    color: #d4af37; 
+}
+
+/* Hero Section */
+.hero { 
+    text-align: center; 
+    padding: 60px 20px; 
+    background: linear-gradient(to right, #3498db, #2c3e50); 
+    color: white; 
+}
+
+/* Primary Action Buttons using Logo Gold */
+.hero button {
+    background-color: #d4af37;
+    color: #2c3e50;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #c59b27; /* Darker gold on hover */
+}
+
+/* Layout Container */
+.container { 
+    width: 80%; 
+    margin: 30px auto; 
+}
+
+/* Chart Section */
+.chart-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Grid Features & Cards */
+.features { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+}
+
+.feed, .container, .container-form, .main-container {
+    flex: 1 0 auto; /* This forces the content area to expand and fill all available empty space */
+}
+
+.card { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+    text-align: center; 
+    border-top: 3px solid #3498db; /* Default subtle blue top border */
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Card turns Gold when user hovers over it */
+.card:hover {
+    transform: translateY(-5px);
+    border-top: 3px solid #d4af37;
+}
+
+.card a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    color: #d4af37;
+}
+
+/* Footer Section */
+footer { 
+    text-align: center; 
+    padding: 15px; 
+    background: #2c3e50; 
+    color: white; 
+    border-top: 4px solid #c59b27;
+    flex-shrink: 0;
+    margin-top: auto;
+}
